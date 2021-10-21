@@ -1,0 +1,55 @@
+body{
+    /* HW REQ 3: 
+    Alegreya Sans SC font. serif backup.
+    bg: “concrete_seamless.png” #f1f1f1 backup */
+    background-image: url('../images/concrete_seamless.png');
+    background-color: #f1f1f1;
+    font-family: 'Alegreya Sans SC', serif;
+  }
+
+  /* TO DO
+  HW REQ 4:
+  header use flex to match our example */
+
+  /* HW REQ 5:
+  links have the same color after visited */
+  a:visited{
+      color: inherit;
+  }
+
+  /* TO DO
+  HW REQ 6:
+  nav_links class use flex to match our example
+  do not modify the list items or the links - modify the nav_links class to use flex */ 
+
+  /* HW REQ 7: 
+  Identify the proper selector to style ONLY those header elements that are direct children of a card class
+  background: #288088, solid 2px border using #45ADAD, 
+  20px of padding on top and bottom.
+  7px border-radius on top left and right corners. */
+  div > header{
+    background-color: #288088;
+    border: solid 2px #45ADAD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+  }
+
+  /* TO DO
+  HW REQ 8:
+  pricing class use flex to match our example
+  cards centered both horizontally and vertically */
+
+  /* TO DO
+  HW REQ 9:
+  card class use flex to match our example  
+  use flex-property to specify initial “size”: 450px
+  think about this from “flex” perspective. flex-direction will affect element sizes.
+  all same width in mobile view */
+
+  /* TO DO
+  HW REQ 10: 
+  images in gallery class: solid 10px border, #50C7C7.
+  10px margin on all four sides. 300 px.  
+  gallery class use flex to match our examples (NOT MEDIA QUERIES) */
