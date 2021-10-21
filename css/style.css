@@ -14,7 +14,7 @@ body{
   /* HW REQ 5:
   links have the same color after visited */
   a:visited{
-      color: inherit;
+      color: none;
   }
 
   /* TO DO
