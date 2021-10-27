@@ -60,8 +60,7 @@ body{
   think about this from “flex” perspective. flex-direction will affect element sizes.
   all same width in mobile view */
   .card{
-    width: 450px;
-    flex-shrink: 1;
+    flex-basis: 450px;
   }
 
   /* HW REQ 10: 
@@ -161,8 +160,13 @@ body{
   }
 
   /*nav/nav_links elements spaced according to the image*/
-  .nav_links{
+  .nav{
+    display:flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .nav_links{
+    flex-direction: row;
     justify-content: space-between;
   }
 
