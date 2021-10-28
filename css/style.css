@@ -152,13 +152,11 @@ body{
   }
 }
 
-@media screen and (min-width: 1000px){
+/*@media screen and (min-width: 1000px){
   body{
-    /*The background image should be removed*/
     background-image: none;
   }
 
-  /*nav/nav_links elements spaced according to the image*/
   header{
     flex-flow: column nowrap;
   }
@@ -172,16 +170,27 @@ body{
     justify-content: space-evenly;
   }
 
-  /* Edit the pricing class so that the elements align along the bottom */
+  .pricing{
+    align-content: flex-end;
+  }
 
-  /*  card elements should have a solid border 2px of #45ADDD and use flex-basis of 250px */
+  .card{
+    border: solid 2px #45ADDD;
+    flex-basis: 250px;
+  }
 
-  /*no part of the gallery should be visible */
+  #gallery, .gallery{
+    display: none;
+  }
 
-  /* Without using list-style-type add the thumbs up entity as shown in the cards
-  This is a challenge problem. You should not give or receive help when completing it
-  **For some people the thumbs up is not printing as yellow.  That is fine. */
+  .card ul li:nth-child(odd):before{
+    content: '\1F44D';
+  }
+  .card ul li:nth-child(even):after{
+    content: '\1F44D';
+  }
 }
+*/
 
 /* when the page is printed */
 @media print{
@@ -204,4 +213,29 @@ body{
     justify-content: space-evenly;
   }
 
+  /* Edit the pricing class so that the elements align along the bottom */
+  .pricing{
+    align-content: flex-end;
+  }
+
+  /*  card elements should have a solid border 2px of #45ADDD and use flex-basis of 250px */
+  .card{
+    border: solid 2px #45ADDD;
+    flex-basis: 250px;
+  }
+
+  /*no part of the gallery should be visible */
+  #gallery, .gallery{
+    display: none;
+  }
+
+  /* Without using list-style-type add the thumbs up entity as shown in the cards
+  This is a challenge problem. You should not give or receive help when completing it
+  **For some people the thumbs up is not printing as yellow.  That is fine. */
+  .card ul li:nth-child(odd):before{
+    content: '\1F44D';
+  }
+  .card ul li:nth-child(even):after{
+    content: '\1F44D';
+  }
 }
