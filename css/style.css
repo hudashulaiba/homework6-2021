@@ -13,6 +13,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding:10px;
   }
 
   /* HW REQ 5:
@@ -51,7 +53,7 @@ body{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
   }
 
   /* TO DO
