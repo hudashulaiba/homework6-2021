@@ -153,47 +153,6 @@ body{
     animation: initial;
   }
 }
-
-/*@media screen and (min-width: 1000px){
-  body{
-    background-image: none;
-  }
-
-  header{
-    flex-flow: column nowrap;
-  }
-  nav{
-    display:flex;
-    flex-flow: row wrap;
-    width: 100%;
-  }
-  .nav_links{
-    width: 100%;
-    justify-content: space-evenly;
-  }
-
-  .pricing{
-    align-content: flex-end;
-  }
-
-  .card{
-    border: solid 2px #45ADDD;
-    flex-basis: 250px;
-  }
-
-  #gallery, .gallery{
-    display: none;
-  }
-
-  .card ul li:nth-child(odd):before{
-    content: '\1F44D';
-  }
-  .card ul li:nth-child(even):after{
-    content: '\1F44D';
-  }
-}
-*/
-
 /* when the page is printed */
 @media print{
   body{
@@ -202,22 +161,19 @@ body{
   }
 
   /*nav/nav_links elements spaced according to the image*/
-  header{
-    flex-flow: column nowrap;
-  }
   nav{
-    display:flex;
-    flex-flow: row wrap;
     width: 100%;
   }
   .nav_links{
     width: 100%;
     justify-content: space-evenly;
+    flex-direction: row;
   }
 
   /* Edit the pricing class so that the elements align along the bottom */
   .pricing{
-    align-content: flex-end;
+    align-items: end;
+    flex-direction: row;
   }
 
   /*  card elements should have a solid border 2px of #45ADDD and use flex-basis of 250px */
